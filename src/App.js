@@ -7,26 +7,25 @@ class App extends Component {
     super(props);
     this.state = {
       todolist: [
-        { title: 'Study React' } ,
-        { title: 'Study Redux' } ,
-        { title: 'Buy an apple' } ,
+        { title: 'Study React' },
+        { title: 'Study Redux' },
+        { title: 'Buy an apple' },
         { title: 'Eat chocolate' }
-       ]
+      ]
     };
   }
   render() {
+    const todolist = this.state.todolist;
     return (
       <div className="App">
         <header className="App-header">
-        
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <ul>
+            <ol>
+              {todolist.map(function(index) {
+                return <li key={index.title}>{index.title}</li>;
+              })}
+            </ol>
+          </ul>
         </header>
       </div>
     );
