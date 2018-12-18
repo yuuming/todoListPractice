@@ -10,6 +10,8 @@ class App extends Component {
         { title: 'Study React' },
         { title: 'Study Redux' },
         { title: 'Buy an apple' },
+        { title: 'Clean the room' },
+        { title: 'Buy the text books' },
         { title: 'Eat chocolate' }
       ]
     };
