@@ -29,6 +29,8 @@ class App extends Component {
               })}
             </li>
           </ul>
+          <input type="text" />
+        <input type="button" value="Add" />
         </header>
       </div>
     );
