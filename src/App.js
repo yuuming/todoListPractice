@@ -16,6 +16,19 @@ class App extends Component {
       ]
     };
   }
+
+  addNewTodo = () => {
+    this.state.todolist.push({
+      title: this.refs.newTitle.value
+    });
+    
+    this.setState({
+      todolist : this.state.todolist
+    });
+    
+    this.refs.newTitle.value='';
+  }
+  
   render() {
     const todolist = this.state.todolist;
     return (
