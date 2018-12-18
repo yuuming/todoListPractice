@@ -25,7 +25,7 @@ class App extends Component {
           <ul>
             <ol>
               {todolist.map(function(index) {
-                return <li key={index.title}>{index.title}</li>;
+                return <li key={index.title}><input type="button" value="☓" /> {index.title}</li>;
               })}
             </ol>
           </ul>
