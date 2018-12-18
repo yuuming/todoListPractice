@@ -18,17 +18,18 @@ class App extends Component {
   }
 
   addNewTodo = () => {
+    // add new list
     this.state.todolist.push({
       title: this.refs.newTitle.value
     });
-    
+    // save new list
     this.setState({
       todolist : this.state.todolist
     });
     
     this.refs.newTitle.value='';
   }
-  
+
   render() {
     const todolist = this.state.todolist;
     return (
