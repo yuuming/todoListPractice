@@ -23,11 +23,11 @@ class App extends Component {
         <header className="App-header">
         <h1>TODO APP</h1>
           <ul>
-            <ol>
+            <li>
               {todolist.map(function(index) {
                 return <li key={index.title}><input type="button" value="☓" /> {index.title}</li>;
               })}
-            </ol>
+            </li>
           </ul>
         </header>
       </div>
